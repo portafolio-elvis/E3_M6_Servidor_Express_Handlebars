@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    {{> head}}
-    <title>Dashboard - {{user.name}}</title>
-</head>
+
+{{> head title="Dashboard"}}
+
 <body>
     {{> header}}
 
@@ -89,6 +88,6 @@
     </main>
 
     {{> footer}}
-    <script src="/js/bootstrap.bundle.min.js"></script>
+    {{> scripts}}
 </body>
 </html>

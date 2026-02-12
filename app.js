@@ -30,8 +30,8 @@ hbs.registerHelper("priorityClass", function (priority) {
 
 app.get("/perfil", (req, res) => {
   res.render("perfil", {
-    name: "Ana",
-    job: "Desarrolladora Web",
+    nombre: "Ana",
+    profesion: "Desarrolladora Web",
   });
 });
 
@@ -67,6 +67,10 @@ app.get("/dashboard", (req, res) => {
     ],
   };
   res.render("dashboard", data);
+});
+
+app.get("/script", (req, res) => {
+  res.sendFile(path.join(__dirname, "public/js/script.js"));
 });
 
 app.listen(port, () => {

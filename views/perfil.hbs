@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    {{> head}}
-    <title>Perfil - {{name}}</title>
-</head>
+
+{{> head title="Perfil"}}
+
 <body>
     {{> header}}
 
@@ -18,8 +17,8 @@
                             </svg>
                         </div>
                     </div>
-                    <h1>{{name}}</h1>
-                    <span class="profession">{{job}}</span>
+                    <h1>{{nombre}}</h1>
+                    <span class="profession">{{profesion}}</span>
 
                     <hr class="my-4">
 
@@ -33,5 +32,6 @@
     </main>
 
     {{> footer}}
+    {{> scripts}}
 </body>
 </html>
